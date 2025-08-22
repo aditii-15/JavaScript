@@ -1,0 +1,1 @@
+console.log('Its an external file in js')
