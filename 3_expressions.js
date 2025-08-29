@@ -115,4 +115,7 @@ var age = 15;
 var result = age >= 18 ? "Yes" : "No";
 console.log(result);
 
-
+//! Question
+console.log("5" - 3); // output 2
+console.log(2 < 12 < 5); // 2 < 12 which is true and the value of true is 1 and 1 < 5 is true
+console.group("20" + 10 + 10); // output 201010
