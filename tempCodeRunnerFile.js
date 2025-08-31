@@ -1,2 +1,2 @@
-let fruits = ["apple", "grape", "watermelon"];
+fruits.splice(1, 1, "grapes");
 // console.log(fruits);

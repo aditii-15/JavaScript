@@ -72,4 +72,14 @@ console.log(drinks);
 
 //* Splice Method - add or remove elements
 
-let fruits = ["apple", "orange", "banana"]
+let fruits = ["apple", "orange", "banana", "mango"];
+// fruits.splice(1, 1, "grapes");
+// console.log(fruits);
+
+fruits.splice(-1, 0, "grapes"); // this will not delete anything
+console.log(fruits);
+
+//* Searching
+
+const num = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+console.log(num.indexOf(4 ));
