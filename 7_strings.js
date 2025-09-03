@@ -29,8 +29,12 @@ let index = message.lastIndexOf("JavaScript");
 console.log(index); // Here rhe last word javascript index is print
 
 //match()
-let text = "Hello JavaScript, Welcome to the learning of JavaScript";
-let result = text.match("JavaScript");
-console.log(result);
+// let text = "Hello JavaScript, Welcome to the learning of JavaScript";
+// let result = text.match(/Javascript/i);
+// console.log(result);
 // if we add i in the match it will solve the problem of case sensitivity
 
+//Includes()
+let text = "Hello JavaScript, Welcome to the learning of JavaScript";
+let includeResult = text.includes("Java");
+console.log(includeResult);
