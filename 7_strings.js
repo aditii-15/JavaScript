@@ -97,3 +97,52 @@ console.log(result);
 for(char = 97; char <= 122; char++){
 console.log(String.fromCharCode(char));
 };
+
+//* WAP to check if all the vowels are present in the string or not
+
+const checkResult = (str) => {
+    const vowels = "aeiou";
+    for(let char of vowels){
+        // console.log(vowels);
+        // console.log(str.includes(char));
+        if(!str.includes(char)){
+            return false;
+        }
+    }
+    return true;
+};
+
+console.log(checkResult("My name is Aditi Mishra"));
+// output will be false as it doesn't contain o and u
+
+//* WAP to count the number of vowels in a string
+
+const countVowels = (str) => {
+    const Vowels = "aeiou";
+    let count = 0;
+    for(let char of str){
+        if (Vowels.includes(char)){
+            count++;
+        }
+    }
+    return count;
+};
+
+console.log(countVowels("Hello World")); // it will give 3
+
+//! Question
+
+const pangramChecker = (str) => {
+    let inputArr = str.toLowerCase().split("");
+    console.log(inputArr);
+    const values = inputArr.filter((curElem) => 
+        curElem.charCodeAt() >= "a".charCodeAt() 
+        && curElem.charCodeAt() <= "z".charCodeAt()
+    );
+    console.log(values);
+    
+    console.log([...new Set(values)].length); // it will erase the duplicate letter
+    
+};
+
+console.log(pangramChecker("The quick brown fox jumps over the lazy dog"));
