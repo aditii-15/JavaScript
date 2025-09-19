@@ -1,0 +1,51 @@
+<!-- ? There are 3 common methods to event handler to HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            margin-bottom: 2.4rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- * Inline Event -->
+     <h1>Inline Event</h1>
+     <button onclick="alert('Welcome to the JS')">Greeting</button>
+     <button ondblclick="alert('Welcome Mate')">Greeting Again</button>
+     <button onmouseover="alert('Welcome again')">Greetings</button>
+
+     <!-- * DOM Event Handler -->
+      <h1>DOM Event Handler</h1>
+      <button id="myBtn">Greeting</button>
+      <button id="myBtn1">Greeting Again</button>
+
+      <!-- * Event Listener and Event Handler -->
+       <h1>Event Listener and Event Handler</h1>
+       <button id="myBtn2">Greeting</button>
+       <button id="myBtn3">Greetings Again</button>
+
+      <script>
+        document.getElementById('myBtn').onclick = () => {
+            alert('Welcome to the JS');
+        };
+        
+        document.getElementById('myBtn1').onmouseover = function (){
+            alert('Welcome again');
+        }
+
+        document.getElementById('myBtn2').addEventListener('click', function () {
+            alert('To the course of JS');
+        });
+
+        document.getElementById('myBtn2').addEventListener('click', () => {
+            alert('JavaScript Learning');
+        });
+      </script>
+</body>
+</html>
