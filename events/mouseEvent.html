@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseEvent</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        .rectangle {
+            width: 35rem;
+            height: 35rem;
+            background-color: #000;
+            border-radius: 1rem;
+            margin-bottom: 3.2rem;
+            transition: all 0.5s linear;
+            box-shadow: rgba(239, 248, 87, 0.2rem) 0px 8px 24px;
+        }
+
+        .addTransitions {
+            border-radius: 50%;
+        }
+
+        .addTransitions3 {
+            border-radius: 50%;
+            background-color: #f5ee62;
+            translate: -30rem 0;
+        }
+
+        .addTransitions4 {
+            border-radius: 50%;
+            background-color: #f5ee62;
+            translate: 30rem 0;
+        }
+        .addTransitions5 {
+            border-radius: 50%;
+            background-color: #f5ee62;
+            translate: -30rem 0;
+        }
+
+        .addTransitions6 {
+            border-radius: 0;
+            background-color: #f5ee62;
+            translate: 0rem 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="rectangle"></div>
+        <button id="myButton">Click</button>
+    </section>
+    <script>
+        let myButton = document.getElementById("myButton");
+        let rectDiv = document.querySelector("rectangle")
+
+        const handleMouseEvents = () => {
+            console.log("click");
+            rectDiv.style.backgroundColor = "#f5ee62";
+        };
+
+        const handleMouseEvents2 = () => {
+            console.log("dblclick");
+            rectDiv.classList.add("addTransition");
+        }
+
+    </script>
+</body>
+</html>
