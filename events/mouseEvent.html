@@ -58,11 +58,11 @@
 <body>
     <section>
         <div class="rectangle"></div>
-        <button id="myButton">Click</button>
+        <button id="myButton">Click me</button>
     </section>
     <script>
         let myButton = document.getElementById("myButton");
-        let rectDiv = document.querySelector("rectangle")
+        let rectDiv = document.querySelector(".rectangle");
 
         const handleMouseEvents = () => {
             console.log("click");
@@ -71,9 +71,33 @@
 
         const handleMouseEvents2 = () => {
             console.log("dblclick");
-            rectDiv.classList.add("addTransition");
+            rectDiv.classList.add("addTransitions");
+        };
+
+        const handleMouseEvents3 = () => {
+            rectDiv.classList.add("addTransitions3");
         }
 
+        const handleMouseEvents4 = () => {
+            rectDiv.classList.add("addTransitions4")
+        }
+
+        const handleMouseEvents5 = () => {
+            rectDiv.classList.add("addTransitions5")
+        }
+
+
+        const handleMouseEvents6 = () => {
+            rectDiv.classList.add("addTransitions6")
+        }
+
+
+        myButton.addEventListener("click", handleMouseEvents);
+        myButton.addEventListener("dblclick", handleMouseEvents2);
+        myButton.addEventListener("mouseover", handleMouseEvents3);
+        myButton.addEventListener("mouseout", handleMouseEvents4);
+        myButton.addEventListener("mousedown", handleMouseEvents5);
+        myButton.addEventListener("mouseup", handleMouseEvents6);
     </script>
 </body>
 </html>
