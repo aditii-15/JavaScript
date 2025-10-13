@@ -203,7 +203,7 @@ let Result = words.map((curElem) => {
 });
 console.log(Result);
 
-//! Using map methos WAP that takes array and returns new array where each number is squared, but only if its even number
+//! Using map methods WAP that takes array and returns new array where each number is squared, but only if its even number
 
 const Nums = [1, 2, 3, 4, 5, 6, 7, 8];
 

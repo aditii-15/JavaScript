@@ -41,10 +41,24 @@
             document.querySelector(
                 ".keyPressed"
             ).textContent = `Key pressed: ${event.key}`;
+
+            document.querySelector(
+                ".keyCode"
+            ).textContent = `Key code: ${event.code}`
+
+            document.querySelector(
+            ".charCode"
+            ).textContent = `Char code: ${event.key.charCodeAt(0)}`;
+
+            document.querySelector(
+                ".eventType"
+            ).textContent = `Key type: ${event.type}`;
         };
 
+        
+
         var myInput = document.getElementById("myInput");
-        myInput.addEventListener("keydown", handleKeyPress);
+        myInput.addEventListener("keyup", handleKeyPress);
     </script>
 </body>
 </html>
