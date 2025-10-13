@@ -12,9 +12,6 @@
             box-sizing: border-box;
         }
 
-        html {
-            
-        }
 
         body {
             width: 100%;
@@ -31,7 +28,68 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            /* font-family: "Poppins", sans-serif; */
+            color: white;
+            gap: 25px;
         }
+
+        section {
+            /* background-color: rgba(255, 255, 255, 0.15); */
+            border-radius: 20px;
+            padding: 40px 60px;
+            text-align: center;
+            /* color: white; */
+            box-shadow: 0 8px 2px rgba(0,0,0,0.3);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h2 {
+            font-size: 0.95rem;
+            text-align: center;
+            /* background: rgba(0, 0, 0, 0.3); */
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+        button {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 40px;
+            margin: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            color: #fff;
+            box-shadow: 0 10px 4px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .myButton:hover {
+            transform: translateY(-3px);
+        }
+
+        #myButton {
+            background-color: #051937;
+        }
+
+        #myButton2 {
+            background-color: #a8eb12;
+            color: #111;
+        }
+
+    .copyCode{
+        width: 450px;
+        margin-top: 10px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 12px 20px;
+        font-family: monospace;
+        color: white;
+        font-size: 16px;
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
     </style>
 <body>
     <section>
@@ -45,5 +103,21 @@
            63, 198))
         </div>
     </section>
+    <script>
+        let btn1 = document.getElementById("myButton");
+        let btn2 = document.getElementById("myButton2");
+
+        const handleButton1 = () => {
+            let myHexValues = "0123456789abcdef";
+            for(let i=0; i<6; i++){
+                // console.log(myHexValues[i]);
+                console.log(myHexValues);
+                
+            }
+        };
+
+        btn1.addEventListener("click", handleButton1);
+        btn2.addEventListener("click", handleButton2);
+    </script>
 </body>
 </html>
